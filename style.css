@@ -27,17 +27,20 @@ body {
   overflow: hidden;
 }
 header {
-  background: var(--header);
+  width: 100vw;
+  background: url(./imagenes/backheader.jpg) no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
   padding: 15px;
@@ -76,4 +79,12 @@ a {
 .navegacion {
   display: flex;
   gap: 10px;
+}
+
+@media (max-width: 900px) {
+  header {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
