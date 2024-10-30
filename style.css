@@ -202,7 +202,7 @@ a:active {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
@@ -230,7 +230,36 @@ a:active {
 .imgcard {
   height: 250px;
   width: 250px;
+  border-radius: 1rem;
+  border: 1px solid white;
 }
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.descripcion-card {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.compra-card {
+  font-size: 0.6rem;
+  width: 80px;
+  background: none;
+  padding: 2px;
+  border-radius: 1rem;
+  color: white;
+}
+
+.compra-card:hover {
+  background: black;
+  color: white;
+}
+
 /* MEDIA */
 
 @media (max-width: 900px) {
@@ -259,17 +288,23 @@ a:active {
     height: 200px;
   }
 
-  .titulo {
-    font-size: 1.4rem;
-  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
-  a {
-    font-size: 0.8rem;
+    .titulo {
+      font-size: 1.4rem;
+    }
+
+    a {
+      font-size: 0.8rem;
+    }
   }
-}
-@media (max-width: 350px) {
-  .logo {
-    width: 70px;
-    height: 70px;
+  @media (max-width: 350px) {
+    .logo {
+      width: 70px;
+      height: 70px;
+    }
   }
 }
