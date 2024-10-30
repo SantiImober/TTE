@@ -19,6 +19,10 @@
   --header: rgb(250, 26, 26);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--fondo);
   color: var(--letras);
