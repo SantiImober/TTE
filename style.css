@@ -45,6 +45,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  border-bottom: 5px solid red;
 }
 
 .navbar {
@@ -108,6 +109,7 @@ a:active {
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.137);
   padding: 25px;
+  border-bottom: 5px solid red;
 }
 
 .texto {
@@ -191,6 +193,7 @@ a:active {
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+  border-bottom: 5px solid red;
 }
 .products {
   text-align: center;
@@ -262,6 +265,71 @@ a:active {
 .compra-card:hover {
   background: black;
   color: white;
+}
+
+/* PLANES */
+
+.planes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 5px solid red;
+}
+
+.plan {
+  background: url(./imagenes/Fondoproductos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  border: solid 2px white;
+  box-shadow: 11px 12px 5px 0px rgba(255, 0, 0, 0.75);
+  -webkit-box-shadow: 11px 12px 5px 0px rgba(255, 0, 0, 0.75);
+  -moz-box-shadow: 11px 12px 5px 0px rgba(255, 0, 0, 0.75);
+}
+
+.encabezado-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  gap: 1rem;
+  border-right: 1px white dashed;
+}
+
+.incluyeplan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+.clase-plan {
+  width: 60px;
+  height: 60px;
+  border: solid 0.5px white;
+  border-radius: 1rem;
+}
+
+.tituloplan {
+  text-align: left;
+  font-size: 1.1rem;
+}
+.descripcion-plan {
+  text-align: left;
+  font-size: 0.7rem;
 }
 
 /* MEDIA */
