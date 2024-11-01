@@ -272,11 +272,12 @@ a:active {
 .planes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   padding: 1rem;
   border-bottom: 5px solid red;
+  gap: 1rem;
 }
 
 .plan {
@@ -305,6 +306,7 @@ a:active {
   height: 100%;
   gap: 1rem;
   border-right: 1px white dashed;
+  padding: 2px;
 }
 
 .incluyeplan {
@@ -314,6 +316,7 @@ a:active {
   align-items: center;
   width: 70%;
   height: 100%;
+  gap: 10px;
 }
 
 .clase-plan {
@@ -330,6 +333,18 @@ a:active {
 .descripcion-plan {
   text-align: left;
   font-size: 0.7rem;
+}
+.lista-plan {
+  padding: 1rem;
+  gap: 20px;
+}
+.li-plan {
+  font-size: 0.7rem;
+  gap: 10px;
+}
+.pl {
+  font-size: 0.8rem;
+  color: rgb(218, 134, 55);
 }
 
 /* MEDIA */
@@ -372,6 +387,18 @@ a:active {
     a {
       font-size: 0.8rem;
     }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
   }
   @media (max-width: 350px) {
     .logo {
@@ -379,4 +406,10 @@ a:active {
       height: 70px;
     }
   }
+  .planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
