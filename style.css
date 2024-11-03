@@ -35,7 +35,7 @@ body {
 
 button {
   background: rgba(255, 0, 0, 0.466);
-  padding: 3px;
+  padding: 5px;
   border-radius: 1rem;
   color: whitesmoke;
   transition: all 0.3s ease-in-out;
@@ -53,7 +53,7 @@ input {
   border: solid 1px rgb(235, 222, 222);
   color: whitesmoke;
   height: 25px;
-  width: 90%;
+  width: 100%;
 }
 label:hover {
   color: rgb(212, 81, 33);
@@ -81,6 +81,12 @@ header {
   align-items: center;
   padding: 30px;
   gap: 10px;
+}
+.cabeza {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
 }
 .navbar {
   display: flex;
@@ -137,16 +143,21 @@ a:active {
 
 .hero {
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   border: 1px solid rgba(255, 255, 255, 0.137);
   padding: 25px;
   border-bottom: 5px solid red;
 }
-
+.heroo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
 .texto {
   display: flex;
   flex-direction: column;
@@ -156,8 +167,8 @@ a:active {
   text-align: center;
 }
 .logohero {
-  width: 120px;
-  height: 120px;
+  width: 250px;
+  height: 250px;
   border-radius: 1rem;
   border: 1px solid whitesmoke;
   box-shadow: 5px 5px 3px 0px rgba(242, 22, 22, 0.75);
@@ -241,8 +252,8 @@ a:active {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   justify-content: space-between;
   align-items: center;
@@ -425,7 +436,12 @@ a:active {
     flex-direction: column;
     align-items: center;
   }
-  .hero {
+
+  .cabeza {
+    display: flex;
+    flex-direction: column;
+  }
+  .heroo {
     display: flex;
     flex-direction: column;
   }

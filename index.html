@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
-      <nav class="navbar">
-        <img src="./imagenes/icono-principal.png" alt="logo" class="logo" />
-        <div class="tit">
-          <h2 class="titulo">The Terror Experience</h2>
-          <ul class="navegacion">
-            <li class="lista"><a href="#sobrett">Sobre TTE</a></li>
-            <li class="lista"><a href="#productos">Compra</a></li>
-            <li class="lista"><a href="#registro">Registro</a></li>
-            <li class="lista"><a href="#">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
-      <form>
-        <input type="text" id="buscador" placeholder="Buscar..." />
-      </form>
-
-      <button>Iniciar Sesion</button>
+      <div class="cabeza">
+        <nav class="navbar">
+          <img src="./imagenes/icono-principal.png" alt="logo" class="logo" />
+          <div class="tit">
+            <h2 class="titulo">The Terror Experience</h2>
+            <ul class="navegacion">
+              <li class="lista"><a href="#sobrett">Sobre TTE</a></li>
+              <li class="lista"><a href="#productos">Compra</a></li>
+              <li class="lista"><a href="#registro">Registro</a></li>
+              <li class="lista"><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </nav>
+        <form>
+          <input type="text" id="buscador" placeholder="Buscar..." />
+        </form>
+        <button>Iniciar Sesion</button>
+      </div>
     </header>
     <main>
       <!-- hero -->
@@ -42,14 +44,15 @@
               monstruos favoritos del cine de horror. Conoce el lado más
               divertido del terror... sin una sola gota de sangre.
             </p>
-            <div class="llamador">
-              <div class="imagenportada"></div>
-              <p class="llamadorhero">30% off por halloween</p>
-            </div>
+          </div>
+          <div class="llamador">
+            <div class="imagenportada"></div>
+            <a href="#planes"
+              ><p class="llamadorhero">30% off por halloween</p></a
+            >
           </div>
         </div>
       </section>
-
       <!-- Productos -->
       <section class="productos" id="productos">
         <div class="products">
@@ -278,24 +281,27 @@
         <div class="card-registro">
           <form class="formreg">
             <label for="Nombre" class="labelform">Nombre</label>
-            <input type="text" name="texto" id="Nombre" class="inputform" />
-
+            <input
+              type="text"
+              name="texto"
+              id="Nombre"
+              class="inputform"
+              required
+            />
             <label for="Apellido" class="labelform">Apellido</label>
             <input
               type="text"
               name="Apellido"
               id="Apellido"
               class="inputform"
+              required
             />
-
             <label for="email" class="labelform">Correo Electronico</label>
-            <input type="email" id="email" class="inputform" />
-
+            <input type="email" id="email" class="inputform" required />
             <label for="tel" class="labelform">Telefono</label>
             <input type="number" id="tel" class="inputform" />
-
             <label for="contraseña" class="labelform">Contraseña</label>
-            <input type="password" id="contraseña" />
+            <input type="password" id="contraseña" required />
             <label for="check">Acepto los terminos y condiciones</label
             ><input type="checkbox" id="check" />
             <button>Registrarse</button>
