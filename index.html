@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="navbar">
         <img src="./imagenes/icono-principal.png" alt="logo" class="logo" />
         <div class="tit">
@@ -16,21 +16,16 @@
           <ul class="navegacion">
             <li class="lista"><a href="#sobrett">Sobre TTE</a></li>
             <li class="lista"><a href="#productos">Compra</a></li>
-            <li class="lista"><a href="#">Registro</a></li>
+            <li class="lista"><a href="#registro">Registro</a></li>
             <li class="lista"><a href="#">Contacto</a></li>
           </ul>
         </div>
       </nav>
-
-      <form action="/buscar" method="get" class="buscador">
-        <input
-          type="text"
-          placeholder="Buscar..."
-          aria-label="Buscar"
-          required
-        />
-        <button type="submit">Buscar</button>
+      <form>
+        <input type="text" id="buscador" placeholder="Buscar..." />
       </form>
+
+      <button>Iniciar Sesion</button>
     </header>
     <main>
       <!-- hero -->
@@ -73,7 +68,7 @@
                 especialmente Halloween, y colecciona herramientas... con fines
                 no violentos, o eso creo.
               </p>
-              <a href="#planes"><button class="compra-card">Elegir</button></a>
+              <a href="#planes"><button>Más Info</button></a>
             </div>
           </div>
           <div class="tarjeta 2">
@@ -86,7 +81,7 @@
                 El enmascarado amante de los viernes ha resuelto sus problemas
                 familiares y ahora está listo para divertirse.
               </p>
-              <a href="#planes"><button class="compra-card">Elegir</button></a>
+              <a href="#planes"><button>Más Info</button></a>
             </div>
           </div>
           <div class="tarjeta 3">
@@ -99,7 +94,7 @@
                 Soñador y amante de la noche, Freddy ha vuelto, retirado de las
                 fiestas, listo para disfrutar del día, siempre lejos del fuego.
               </p>
-              <a href="#planes"><button class="compra-card">Elegir</button></a>
+              <a href="#planes"><button>Más Info</button></a>
             </div>
           </div>
           <div class="tarjeta 4">
@@ -116,7 +111,7 @@
                 Recién salido del psiquiátrico y sanando traumas, ahora reparte
                 abrazos... sin cuchillos, por si acaso.
               </p>
-              <a href="#planes"><button class="compra-card">Elegir</button></a>
+              <a href="#planes"><button>Más Info</button></a>
             </div>
           </div>
           <div class="tarjeta 5">
@@ -129,7 +124,7 @@
                 El icónico amante de las motosierras se hizo vegano: ahora sus
                 máscaras son de eco-cuero, ¡0% piel humana!
               </p>
-              <a href="#planes"><button class="compra-card">Elegir</button></a>
+              <a href="#planes"><button>Más Info</button></a>
             </div>
           </div>
           <div class="tarjeta 6">
@@ -143,7 +138,7 @@
                 llamar y cambió el aljibe por un loft en Puerto Madero.
                 ¡Modernización total!
               </p>
-              <a href="#planes"><button class="compra-card">Elegir</button></a>
+              <a href="#planes"><button>Más Info</button></a>
             </div>
           </div>
         </div>
@@ -155,10 +150,9 @@
             <h2 class="tituloplan">Plan Basico: Aparición</h2>
             <img src="./imagenes/icono1.png" alt="plan1" class="clase-plan" />
             <p class="descripcion-plan">
-              Dos icónicos personajes de terror retirados se aparecen en la
-              fiesta para compartir una dosis de susto ligero y diversión.
-              Perfecto para quienes buscan un toque de misterio sin demasiada
-              intensidad. Duracion 1:30 horas.
+              <strong>Duración: 1:30 horas</strong> Dos personajes icónicos de
+              terror se presentan en la fiesta para compartir sustos ligeros y
+              diversión en tono cómico.
             </p>
           </div>
           <div class="incluyeplan">
@@ -167,7 +161,7 @@
               <li class="li-plan">
                 <p class="pl">Llegada Escalofriante:</p>
                 Los personajes hacen una entrada llamativa, saludando y
-                asustando juguetonamente a los invitados.
+                asustando a los invitados.
               </li>
               <li class="li-plan">
                 <p class="pl">Sesión de Fotos con los Personajes:</p>
@@ -181,8 +175,8 @@
               </li>
               <li class="li-plan">
                 <p class="pl">Mini-Show de Sustos:</p>
-                Los personajes hacen pequeñas intervenciones para asustar
-                juguetonamente a los invitados sin perder el tono cómico.
+                Los personajes hacen pequeñas intervenciones para asustar a los
+                invitados sin perder el tono cómico.
               </li>
               <li class="li-plan">
                 <p class="pl">Despedida Humorística:</p>
@@ -190,7 +184,7 @@
                 "retiro" y sus nuevas vidas tranquilas.
               </li>
             </ul>
-            <button class="compra-plan"></button>
+            <button>Compra $</button>
           </div>
         </div>
         <div class="plan 2">
@@ -198,9 +192,9 @@
             <h2 class="tituloplan">Plan "Medium": Fiesta del terror</h2>
             <img src="./imagenes/icono2.png" alt="plan2" class="clase-plan" />
             <p class="descripcion-plan">
-              Cuatro personajes de terror retirados llegan a la fiesta en busca
-              de diversión, en un ambiente cargado de nostalgia y humor oscuro.
-              Duracion 2 horas.
+              <strong>Duración: 2 horas</strong>
+              Cuatro personajes de terror "retirados" interactúan activamente
+              con los invitados en un ambiente cargado de humor oscuro.
             </p>
           </div>
           <div class="incluyeplan">
@@ -228,12 +222,11 @@
               </li>
               <li class="li-plan">
                 <p class="pl">
-                  Cada personaje tiene un momento especial en la fiesta para
-                  sorprender con un acto cómico o de susto ligero.
+                  Cada personaje tiene un momento especial en la fiesta.
                 </p>
               </li>
             </ul>
-            <button class="compra-plan"></button>
+            <button>Compra $</button>
           </div>
         </div>
         <div class="plan 3">
@@ -241,9 +234,9 @@
             <h2 class="tituloplan">Plan Premium: Pesadilla Eterna</h2>
             <img src="./imagenes/icono3.png" alt="plan3" class="clase-plan" />
             <p class="descripcion-plan">
-              Todos los personajes de terror retirados llegan a pasar una “noche
-              de descanso” en la fiesta, donde se liberan para crear un ambiente
-              surrealista y cómico. Duracion 3 horas.
+              <strong> Duración: 3 horas</strong>
+              Todos los personajes se presentan para una “noche de descanso” y
+              crean un ambiente surrealista y cómico.
             </p>
           </div>
           <div class="incluyeplan">
@@ -262,8 +255,7 @@
               <li class="li-plan">
                 <p class="pl">Escenas Improvisadas:</p>
                 Momentos espontáneos en los que los personajes interactúan entre
-                sí y con los invitados, recreando antiguas escenas pero de
-                manera divertida.
+                sí y con los invitados, recreando antiguas escenas.
               </li>
               <li class="li-plan">
                 <p class="pl">Tour de Terror Humorístico:</p>
@@ -277,8 +269,39 @@
                 finales.
               </li>
             </ul>
-            <button class="compra-plan"></button>
+            <button>Compra $</button>
           </div>
+        </div>
+      </section>
+      <!-- Registro -->
+      <section class="registro" id="registro">
+        <div class="card-registro">
+          <form class="formreg">
+            <label for="Nombre" class="labelform">Nombre</label>
+            <input type="text" name="texto" id="Nombre" class="inputform" />
+
+            <label for="Apellido" class="labelform">Apellido</label>
+            <input
+              type="text"
+              name="Apellido"
+              id="Apellido"
+              class="inputform"
+            />
+
+            <label for="email" class="labelform">Correo Electronico</label>
+            <input type="email" id="email" class="inputform" />
+
+            <label for="tel" class="labelform">Telefono</label>
+            <input type="number" id="tel" class="inputform" />
+
+            <label for="contraseña" class="labelform">Contraseña</label>
+            <input type="password" id="contraseña" />
+            <label for="check">Acepto los terminos y condiciones</label
+            ><input type="checkbox" id="check" />
+            <button>Registrarse</button>
+            <p>Ya tenes cuenta?</p>
+            <button>Iniciar Sesion</button>
+          </form>
         </div>
       </section>
     </main>
