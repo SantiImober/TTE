@@ -437,6 +437,12 @@ a:active {
   gap: 10px;
 }
 
+.cuadradito {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
 /* contacto */
 
 .contacto {
@@ -454,7 +460,7 @@ a:active {
 }
 .card-contacto {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   width: 80%;
@@ -462,6 +468,7 @@ a:active {
   background: #302625b0;
   gap: 10px;
   padding: 30px;
+  border-radius: 1rem;
 }
 
 iframe {
@@ -470,14 +477,54 @@ iframe {
 }
 
 .noscontactamos {
-  width: 50%;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nos-contactamos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .input-contacto {
   height: 150px;
 }
 
+.map {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.redessociales {
+  display: flex;
+  background: whitesmoke;
+  width: 700px;
+  height: 20%;
+  gap: 5px;
+  padding: 3px;
+  border-radius: 1rem;
+  border: 1px solid darkred;
+  align-items: end;
+}
+
+.social {
+  width: 20px;
+  height: 20px;
+  border-radius: 1rem;
+}
+.psocial {
+  color: darkred;
+  font-size: 0.8rem;
+}
 /* MEDIA */
 
 @media (max-width: 1390px) {
@@ -485,119 +532,161 @@ iframe {
     display: flex;
     flex-direction: column;
   }
-}
 
-@media (max-width: 900px) {
-  header {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  iframe {
-    width: 300px;
-    height: 300px;
-  }
-  .cabeza {
+  .card-contacto {
     display: flex;
     flex-direction: column;
   }
-  .heroo {
+
+  .mapiframe {
+    width: 650px;
+  }
+
+  .redessociales {
     display: flex;
     flex-direction: column;
-  }
-  .llamador {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .titulo-hero {
-    text-align: center;
+    align-items: flex-start;
+    width: 650px;
   }
 
-  .imagenportada {
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-  }
+  @media (max-width: 900px) {
+    header {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    iframe {
+      width: 300px;
+      height: 300px;
+    }
+    .cabeza {
+      display: flex;
+      flex-direction: column;
+    }
+    .heroo {
+      display: flex;
+      flex-direction: column;
+    }
+    .llamador {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .titulo-hero {
+      text-align: center;
+    }
 
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
+    .imagenportada {
+      width: 300px;
+      height: 300px;
+      background-size: cover;
+    }
 
-  .titulo {
-    font-size: 1.4rem;
-  }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
 
-  a {
-    font-size: 0.8rem;
-  }
+    .titulo {
+      font-size: 1.4rem;
+    }
 
-  .logo {
-    width: 70px;
-    height: 70px;
-  }
+    a {
+      font-size: 0.8rem;
+    }
 
-  .planes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-@media (max-width: 450px) {
-  .logo {
-    width: 70px;
-    height: 70px;
-  }
-  .imgcard {
-    height: 150px;
-    width: 150px;
-    border-radius: 1rem;
-    border: 1px solid white;
-  }
+    .logo {
+      width: 70px;
+      height: 70px;
+    }
 
-  .descripcion-card {
-    font-size: 0.6rem;
-    text-align: center;
-  }
+    .planes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
 
-  .planes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
+    .card-contacto {
+      display: flex;
+      flex-direction: column;
+    }
 
-  .plan {
-    width: 300px;
-    height: 300px;
-  }
+    .mapiframe {
+      width: 330px;
+    }
 
-  .tituloplan {
-    text-align: left;
-    font-size: 0.8rem;
+    .redessociales {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 330px;
+    }
   }
-  .descripcion-plan {
-    text-align: left;
-    font-size: 0.5rem;
-  }
-  .lista-plan {
-    padding: 1rem;
-    gap: 20px;
-  }
-  .li-plan {
-    font-size: 0.4rem;
-    gap: 10px;
-  }
-  .pl {
-    font-size: 0.6rem;
-    color: rgb(218, 134, 55);
-  }
+  @media (max-width: 450px) {
+    .logo {
+      width: 70px;
+      height: 70px;
+    }
+    .imgcard {
+      height: 150px;
+      width: 150px;
+      border-radius: 1rem;
+      border: 1px solid white;
+    }
 
-  .tarjeta {
-    width: 320px;
-    height: 320px;
+    .descripcion-card {
+      font-size: 0.6rem;
+      text-align: center;
+    }
+
+    .planes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .plan {
+      width: 300px;
+      height: 300px;
+    }
+
+    .tituloplan {
+      text-align: left;
+      font-size: 0.8rem;
+    }
+    .descripcion-plan {
+      text-align: left;
+      font-size: 0.5rem;
+    }
+    .lista-plan {
+      padding: 1rem;
+      gap: 20px;
+    }
+    .li-plan {
+      font-size: 0.4rem;
+      gap: 10px;
+    }
+    .pl {
+      font-size: 0.6rem;
+      color: rgb(218, 134, 55);
+    }
+
+    .tarjeta {
+      width: 320px;
+      height: 320px;
+    }
+
+    .redessociales {
+      width: 150px;
+      align-items: center;
+      justify-content: center;
+    }
+    .mapiframe {
+      width: 150px;
+      height: 150px;
+    }
   }
 }

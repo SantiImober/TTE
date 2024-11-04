@@ -314,8 +314,10 @@
             <input type="number" id="tel" class="inputform" />
             <label for="contraseña" class="labelform">Contraseña</label>
             <input type="password" id="contraseña" required />
-            <label for="check">Acepto los terminos y condiciones</label
-            ><input type="checkbox" id="check" />
+            <div class="cuadradito">
+              <label for="check">Acepto los terminos y condiciones</label
+              ><input type="checkbox" id="check" />
+            </div>
             <button>Registrarse</button>
             <p>Ya tenes cuenta?</p>
             <button>Iniciar Sesion</button>
@@ -326,24 +328,50 @@
       <section class="contacto">
         <div class="card-contacto">
           <div class="map">
-            <h2 class="titulo-contato">Ofinicas corporativas</h2>
+            <h2 class="titulo-contato">Oficinas corporativas</h2>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.760188281737!2d25.36458877545618!3d45.51490593005524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b347e5a415de31%3A0xcf922792d921ab7f!2sCastillo%20de%20Bran!5e0!3m2!1ses-419!2sar!4v1730675090254!5m2!1ses-419!2sar"
-              width="600"
-              height="450"
+              width="700"
+              height="350"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              class="mapiframe"
             ></iframe>
+            <div class="redessociales">
+              <img src="./imagenes/facebook.png" alt="fb" class="social" />
+              <p class="psocial">The Terror Experiece</p>
+              <img
+                src="./imagenes/instagram.png"
+                alt="instagram"
+                class="social"
+              />
+              <p class="psocial">TerrorEperience.OK</p>
+              <img src="./imagenes/web.png" alt="Web" class="social" />
+              <p class="psocial">www.theterrorexperience.com.ar</p>
+              <img
+                src="./imagenes/llamada-telefonica.png"
+                alt="llamada"
+                class="social"
+              />
+              <p class="psocial">11666696969</p>
+            </div>
           </div>
           <div class="noscontactamos">
             <h2 class="titulo-contato">Hacenos tu conusulta</h2>
-            <form class="noscontactamos">
-              <label for="contact">Dejanos tu pregunta</label>
+            <p>Completa tus datos y un asesor se comunicara a la brevedad.</p>
+            <form class="nos-contactamos">
+              <label for="contact">Dejanos tu consulta</label>
               <input type="text" class="input-contacto" id="contact" />
+              <label for="name">Nombre y Apellido</label>
+              <input type="text" id="name" />
+              <label for="correoelect">Correo Electronico</label>
+              <input type="email" id="correoelect" />
+              <label for="celu">Telefono</label>
+              <input type="number" id="celu" />
+              <button>Enviar</button>
             </form>
-            <button>Enviar</button>
           </div>
         </div>
       </section>
