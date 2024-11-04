@@ -60,6 +60,17 @@ label:hover {
   cursor: pointer;
 }
 
+h2 {
+  font-family: "Bangers", system-ui;
+  color: transparent;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 43%,
+    rgba(246, 49, 0, 1) 100%
+  );
+  background-clip: text;
+}
+
 /* HEADER */
 
 header {
@@ -143,11 +154,8 @@ a:active {
 
 .hero {
   width: 100%;
-  /* display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
   justify-content: space-between;
-  align-items: center; */
+  align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.137);
   padding: 25px;
   border-bottom: 5px solid red;
@@ -157,6 +165,7 @@ a:active {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 .texto {
   display: flex;
@@ -428,7 +437,55 @@ a:active {
   gap: 10px;
 }
 
+/* contacto */
+
+.contacto {
+  background: url(./imagenes/pexels-fireberrytech-2848647.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-bottom: 5px solid red;
+}
+.card-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  border: 1px solid whitesmoke;
+  background: #302625b0;
+  gap: 10px;
+  padding: 30px;
+}
+
+iframe {
+  border-radius: 1rem;
+  border: solid 1px whitesmoke;
+}
+
+.noscontactamos {
+  width: 50%;
+  gap: 20px;
+}
+
+.input-contacto {
+  height: 150px;
+}
+
 /* MEDIA */
+
+@media (max-width: 1390px) {
+  .heroo {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 900px) {
   header {
@@ -436,7 +493,10 @@ a:active {
     flex-direction: column;
     align-items: center;
   }
-
+  iframe {
+    width: 300px;
+    height: 300px;
+  }
   .cabeza {
     display: flex;
     flex-direction: column;
