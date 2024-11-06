@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro TTE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./imagenes/iconosolo.png" />
+  </head>
+  <body class="registro" id="registro">
+    <!-- Registro -->
+
+    <div class="card-registro">
+      <a href="./index.html"><h2 class="titulo">The Terror Experience</h2></a>
+      <form class="formreg">
+        <label for="Nombre" class="labelform">Nombre</label>
+        <input
+          type="text"
+          name="texto"
+          id="Nombre"
+          class="inputform"
+          required
+        />
+        <label for="Apellido" class="labelform">Apellido</label>
+        <input
+          type="text"
+          name="Apellido"
+          id="Apellido"
+          class="inputform"
+          required
+        />
+        <label for="email" class="labelform">Correo Electronico</label>
+        <input type="email" id="email" class="inputform" required />
+        <label for="tel" class="labelform">Telefono</label>
+        <input type="number" id="tel" class="inputform" />
+        <label for="contraseña" class="labelform">Contraseña</label>
+        <input type="password" id="contraseña" required />
+        <div class="cuadradito">
+          <label for="check">Acepto los terminos y condiciones</label
+          ><input type="checkbox" id="check" />
+        </div>
+      </form>
+      <a href="./Inicio.html" target="_blank"><button>Registrarse</button></a>
+      <p>¿Ya tenes cuenta?</p>
+      <a href="./Inicio.html" target="_blank"
+        ><button>Iniciar Sesión</button></a
+      >
+    </div>
+  </body>
+</html>

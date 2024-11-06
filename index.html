@@ -18,15 +18,20 @@
             <ul class="navegacion">
               <li class="lista"><a href="#sobrett">Sobre TTE</a></li>
               <li class="lista"><a href="#productos">Compra</a></li>
-              <li class="lista"><a href="#registro">Registro</a></li>
-              <li class="lista"><a href="#">Contacto</a></li>
+              <li class="lista"><a href="#planes">Planes</a></li>
+              <li class="lista"><a href="#contacto">Contacto</a></li>
             </ul>
           </div>
         </nav>
         <form>
           <input type="text" id="buscador" placeholder="Buscar..." />
         </form>
-        <button>Iniciar Sesion</button>
+        <div class="botonesreg">
+          <a href="/Inicio.html" target="_blank"
+            ><button>Iniciar Sesión</button></a
+          >
+          <a href="./reg.html" target="_blank"><button>Registrate</button></a>
+        </div>
       </div>
     </header>
     <main>
@@ -47,8 +52,8 @@
           </div>
           <div class="videopromocional">
             <iframe
-              width="560"
-              height="315"
+              width="500"
+              height="300"
               src="https://www.youtube.com/embed/gKwE1CH4bLA?si=SZPRn1bwAOceijhz"
               title="YouTube video player"
               frameborder="0"
@@ -279,53 +284,16 @@
               </li>
               <li class="li-plan">
                 <p class="pl">Cierre Apoteósico:</p>
-                Los personajes realizan una “despedida” en conjunto,
-                agradeciendo la “invitación a su retiro” y posando para fotos
-                finales.
+                Los personajes realizan una “despedida”, agradeciendo la
+                “invitación a su retiro” y posando para fotos.
               </li>
             </ul>
             <button>Compra $</button>
           </div>
         </div>
       </section>
-      <!-- Registro -->
-      <section class="registro" id="registro">
-        <div class="card-registro">
-          <form class="formreg">
-            <label for="Nombre" class="labelform">Nombre</label>
-            <input
-              type="text"
-              name="texto"
-              id="Nombre"
-              class="inputform"
-              required
-            />
-            <label for="Apellido" class="labelform">Apellido</label>
-            <input
-              type="text"
-              name="Apellido"
-              id="Apellido"
-              class="inputform"
-              required
-            />
-            <label for="email" class="labelform">Correo Electronico</label>
-            <input type="email" id="email" class="inputform" required />
-            <label for="tel" class="labelform">Telefono</label>
-            <input type="number" id="tel" class="inputform" />
-            <label for="contraseña" class="labelform">Contraseña</label>
-            <input type="password" id="contraseña" required />
-            <div class="cuadradito">
-              <label for="check">Acepto los terminos y condiciones</label
-              ><input type="checkbox" id="check" />
-            </div>
-            <button>Registrarse</button>
-            <p>Ya tenes cuenta?</p>
-            <button>Iniciar Sesion</button>
-          </form>
-        </div>
-      </section>
       <!-- Contacto -->
-      <section class="contacto">
+      <section class="contacto" id="contacto">
         <div class="card-contacto">
           <div class="map">
             <h2 class="titulo-contato">Oficinas corporativas</h2>
@@ -376,6 +344,11 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- FOOTER -->
+    <footer class="piedepag">
+      <p>Proyecto ficticio creado para trabajo integrador de diseño web</p>
+      <p>Imagenes y video generados por IA</p>
+      <p>&#169; 2024 Idea original de Imoberdoff Santiago</p>
+    </footer>
   </body>
 </html>
